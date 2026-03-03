@@ -66,11 +66,17 @@
       </p>
 
       <div class="buttons grid grid-cols-3 gap-3">
-        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+        <button
+          onclick="shoeOnly('add-money')"
+          class="btn flex-col h-full py-5 btn-primary btn-soft"
+        >
           <img src="/assets/opt-1.png" alt="" />
           <p>Add Money</p>
         </button>
-        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+        <button
+          onclick="shoeOnly('cashout')"
+          class="btn flex-col h-full py-5 btn-primary btn-soft"
+        >
           <img src="/assets/opt-2.png" alt="" />
           <p>Cashout</p>
         </button>
@@ -93,7 +99,7 @@
       </div>
     </section>
 
-    <section id="add-money" class="w-11/12 mx-auto py-5">
+    <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
       <h2 class="text-xl font-bold mb-5">Add money</h2>
 
       <div class="card bg-base-100 w-full shadow rounded-2xl">
@@ -158,7 +164,7 @@
       </div>
     </section>
 
-    <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
+    <section id="cashout" class="w-11/12 mx-auto py-5">
       <h2 class="text-xl font-bold mb-5">Cashout</h2>
 
       <div class="card bg-base-100 w-full shadow rounded-2xl">
@@ -206,6 +212,7 @@
         </div>
       </div>
     </section>
+
     <script src="script/machine.js"></script>
     <script src="script/Add-Money.js"></script>
     <script src="/script/cashout.js"></script>

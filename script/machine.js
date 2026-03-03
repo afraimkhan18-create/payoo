@@ -22,3 +22,21 @@ const balanceElement =document.getElementById('balance')
 balanceElement.innerText = value
 
 }
+
+// machine id > hidden id >show id
+function shoeOnly(id) {
+    console.log('show only');
+    
+    const addmoney = document.getElementById("add-money")
+    const cashout = document.getElementById("cashout")
+    console.log(`addmoney ${addmoney}, cashout ${cashout}`);
+
+    // sobaile hidden kore daw
+    addmoney.classList.add("hidden")
+    cashout.classList.add("hidden")
+
+    // id wala element ke remove koro
+    const selected =document.getElementById(id);
+    selected.classList.remove('hidden')
+    
+}
